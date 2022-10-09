@@ -25,7 +25,7 @@ fn roll(num: i32) {
     let mut res: Vec<u8> = Vec::new();
     let mut rng = thread_rng();
 
-    for _ in 1..num {
+    for _ in 0..num {
         let n = rng.gen_range(1..=6);
         res.push(n);
     }
