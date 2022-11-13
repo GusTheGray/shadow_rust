@@ -1,6 +1,4 @@
-
 use rand::{thread_rng, Rng};
-
 
 fn main() {
     let args: Vec<String> = std::env::args().collect();
@@ -33,4 +31,10 @@ fn roll(num: i32) {
     let hits = res.iter().filter(|x| x > &&4).count();
 
     println!("{hits} hits! \n{:?}", res);
+}
+
+mod test {
+    use super::*;
+
+
 }
